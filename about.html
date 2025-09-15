@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="robots" content="index, follow">
+    <!-- <link rel="canonical" href="https://wapsgh.com/" /> -->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <link rel="icon" type="image/png" href="Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="Images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg" />
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="nurture.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    <script src="mobile-nav.js"></script>
+    <script src="content-transition.js"> </script>
+
+  
+
+
+
+
+    <!-- Google tag (gtag.js) -->
+    
+
+
+
+</head>
+
+<script>
+window.addEventListener("load", function() {
+  const preloader = document.getElementById("preloader");
+
+//   Delay hiding 
+  setTimeout(() => {
+    preloader.classList.add("hidden");
+  }, 500); // 
+});
+</script>
+
+
+
+
+
+<div id="preloader">
+<img src="images/nurture-logo.jpg" alt="Logo" id="preloader-logo">
+</div>
+
+
+
+
+<!-- Preloader full screen -->
+
+<!-- No Delay hiding  -->
+<!-- <script>
+window.addEventListener("load", function() {
+ const preloader = document.getElementById("preloader");
+ preloader.classList.add("hidden");
+});
+</script> -->
+
+
+
+
+
+
+<body>
+    
+<header> 
+
+
+
+    <!------------ DESKTOP NAV ------------ -->
+
+ <nav class="nav-bar">
+    <!-- Left side -->
+    <div class="nav-left">
+      <ul class="nav-buttons">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </div>
+
+    <!-- Center Logo -->
+    <div class="nav-center">
+      <a href="index.html" class="logo">
+        <img src="images/nurture-logo.jpg" alt="Logo">
+      </a>
+    </div>
+
+    <!-- Right side -->
+    <div class="nav-right">
+      <ul class="nav-buttons">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="account-cart">
+        <ul class="a-c">
+          <li><a href="account.html"><img src="images/account.png" alt="Account"></a></li>
+          <li>
+          <a href="cart.html" class="cart-link">
+            <img src="images/shopping-cart_5254037.png" alt="Cart">
+            <span class="cart-count">0</span>
+          </a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!--------------- MOBILE NAV ------------------>
+<!-- MOBILE NAV -->
+<div class="mobile-nav">
+  <nav class="navbar">
+    <!-- Hamburger (left) -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- Logo (center) -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/nurture-logo.jpg" alt="Nurture Logo">
+      </a>
+    </div>
+
+    <!-- Account & Cart (right) -->
+    <div class="account-cart-mobile">
+      <a href="account.html"><img src="images/account.png" alt="Account"></a>
+      <a href="cart.html" class="cart-link">
+        <img src="images/shopping-cart_5254037.png" alt="Cart">
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Slide Menu -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <!-- <li class="sign-up"><a href="#" class="btn-sign">Sign Up</a></li>
+    <li class="sign-in"><a href="#" class="btn-sign">Sign In</a></li> -->
+  </ul>
+</div>
+
+
+</header>
+
+<!--------- PAGE HERO ---------->
+
+<section class="page-hero">
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <h1>About</h1>
+    <p><a href="index.html">Home</a> / <span class="current-page">About</span></p>
+  </div>
+</section>
+
+
+
+
+<!-- COMPANY OVERVIEW -->
+<section class="company-overview" id="overview" data-animate="fade-in">
+  <div class="container">
+    <div class="overview-card">
+      <div class="overview-title" role="heading" aria-level="3">Company Overview</div>
+      <div class="overview-body">
+        Nurture and Glow Beauty was founded with the vision to be a reliable destination for premium, head-to-toe beauty care — combining science and innovation in health and beauty.
+      </div>
+    </div>
+
+    <div class="mission-card">
+      <div class="mission-title" role="heading" aria-level="3">Mission &amp; Expertise</div>
+      <div class="mission-body">
+        Our mission is to deliver premium, unique skincare — future-ready innovations designed to prioritize both effectiveness and safety. All team members are committed to bridging the gap between global innovation and African beauty needs.
+      </div>
+    </div>
+
+    <div class="values-grid" role="list" aria-label="Core values">
+      <div class="value" role="listitem" data-animate="flip">Integrity</div>
+      <div class="value" role="listitem" data-animate="flip">Quality</div>
+      <div class="value" role="listitem" data-animate="flip">Innovation</div>
+      <div class="value" role="listitem" data-animate="flip">Customer Care</div>
+      <div class="value" role="listitem" data-animate="flip">Sustainability</div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR STORY (TIMELINE-LIKE) -->
+<section class="our-story" id="story" data-animate="slide-left">
+  <div class="container story-wrap">
+    <div class="story-intro" role="heading" aria-level="3">Our Story</div>
+
+    <div class="story-timeline" aria-hidden="false">
+      <div class="timeline-item">
+        <div class="timeline-point">1</div>
+        <div class="timeline-content">
+          The journey of Nurture and Glow Beauty began with a passion for making high-performance skincare accessible in Africa.
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-point">2</div>
+        <div class="timeline-content">
+          Seeing a gap for safe, science-driven products, we partnered with Zeitschild — a premium, research-driven alternative to many traditional and imported options — to bring their solutions to our region.
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-point">3</div>
+        <div class="timeline-content">
+          This is just the beginning. We will soon expand our shop to include more premium skincare, haircare and wellness products — carefully chosen to meet your beauty and well-being needs.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!------------- SHOP NOW ------------->
+
+<section class="how-it-works ">
+  <div class="how-card fade-in-section">
+    <div class="how-text">
+      <h2>Elevate Your <br> Everyday Glow</h2>
+      <p class="p1">Discover handpicked products designed to care for your skin and uplift your confidence.</p>
+
+      <div class="how-buttons">
+        <a href="shop.html"><button class="how-btn">Shop Now</button></a>
+        <a href="#"><button class="how-btn outline">Products</button></a>
+      </div>
+    </div>
+
+    <div class="how-image">
+      <img src="images/black-woman-smile-hair-scarf-care-studio-isolated-brown-background-natural-cosmetics-thinking-african-model-with-head-wrap-after-salon-treatment-afro-wellness-hairstyle.png" alt="Business illustration">
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- NEWSLETTER / MAILING LIST CTA -->
+<section class="newsletter" id="newsletter" data-animate="fade-up">
+  <div class="container">
+    <div class="newsletter-head" role="heading" aria-level="3">Stay in the Glow Loop</div>
+    <div class="newsletter-sub">Subscribe for launch updates, expert tips, and exclusive offers.</div>
+    <div class="newsletter-form">
+      <!-- <label for="text">Subscribe</label> -->
+      <input type="text" placeholder="example@email.com">
+      <input type="submit">
+      <!-- <div class="input-placeholder">[ email input here ]</div>
+      <div class="submit-placeholder" role="button" tabindex="0">Subscribe</div> -->
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!------------- Back to Top Button ------------->
+<button id="backToTop" onclick="scrollToTop()">&uarr;</button>
+
+<script>
+    // Show button when user scrolls down 200px
+    window.onscroll = function() {
+        let button = document.getElementById("backToTop");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    };
+
+    // Scroll to top function
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+
+
+
+
+ <!---------------------------- FOOTER -------------------------->
+
+<footer class="main-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html"><img src="images/nurture-logo-transparent-1.png" alt="Nurture and Glow Logo"></a>
+      <p>Everything you need for your beauty and well-being, from head to toe.</p> <br>
+
+      <!-- Social Icons moved here -->
+      <div class="social-icons">
+        <a href="#"><img src="images/facebook-1.svg" alt="Facebook"></a>
+        <a href="#"><img src="images/instagram-1.svg" alt="Instagram"></a>
+        <a href="#"><img src="images/x-twitter-brands-solid-full-green.svg" alt="Twitter"></a>
+        <a href="#"><img src="images/tiktok-1.svg" alt="TikTok"></a>
+        <a href="#"><img src="images/snapchat_green.svg" alt="Snapchat"></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="products.html#acne-clear">Acne Clear</a></li>
+          <li><a href="products.html#br-cream">Barrier Repair</a></li>
+          <li><a href="products.html#sr-relief">Scalp Relief</a></li>
+          <li><a href="products.html#ac-relief">Active Relief</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="shipping.html">Delivery & Payments</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="privacy-policy.html#medical">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Nurture and Glow Beauty. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<script src="cart.js"></script>
+</body>
+</html>

@@ -1458,15 +1458,29 @@ gap: -50px;
     max-width: 200px;
     transform: scale(1);
   }
-   .product-video,
+   /* .product-video,
    .product-video-2 {
     width: 100%;
     max-width: 350px;
     height: 500px;
   }
 
+   .product-video video {
+    width: 350px ;
+  }
+
+
    .product-video-2 {
     width: 350px;
+  } */
+
+
+  .video-container video {
+   width: 100%;
+   max-width: 350px;
+    width: 350px;
+    height: 500px;
+    margin: 0 auto;
   }
 
 
@@ -2131,6 +2145,7 @@ transition: 0.3s ease-out;
   .parallax-index {
     height: 70vh;
     padding: 0 15px;
+    background-attachment: scroll; 
   }
 
   .shop-now-content h2 {
@@ -2154,6 +2169,7 @@ transition: 0.3s ease-out;
   .parallax-index {
     height: 70vh;
     padding: 0 10px;
+    background-attachment: scroll; 
   }
 
   .shop-now-content h2 {

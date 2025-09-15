@@ -2429,6 +2429,7 @@ transition: 0.3s ease-out;
       flex-direction: column;
       justify-self: center;
       width: 70%;
+      margin:  0 auto;
       /* width: 500px; */
     }
     .submit-placeholder {

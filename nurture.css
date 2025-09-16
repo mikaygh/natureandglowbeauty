@@ -3515,6 +3515,7 @@ h1 {
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s;
+  margin-top: 10px;
 }
 
 .checkout-btn:hover:not(.disabled) {
@@ -3620,6 +3621,7 @@ h1 {
     width: 100%;
     font-size: 0.95rem;
     padding: 0.7rem 1.2rem;
+    margin-top: 10px;
   }
 }
 
@@ -3657,6 +3659,9 @@ h1 {
     font-size: 14px;
     padding: 4px 8px;
   }
+  .checkout-btn {
+    margin-top: 10px;
+  }
 }
 
 /* Extra small devices (max-width: 400px) */
@@ -3688,6 +3693,7 @@ h1 {
   .checkout-btn {
     font-size: 0.9rem;
     padding: 0.6rem 1rem;
+    margin-top: 10px;
   }
 }
 

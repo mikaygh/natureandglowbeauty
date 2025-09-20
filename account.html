@@ -40,12 +40,8 @@
 
 <script>
 window.addEventListener("load", function() {
-  const preloader = document.getElementById("preloader");
-
-//   Delay hiding 
-  setTimeout(() => {
-    preloader.classList.add("hidden");
-  }, 500); // 
+ const preloader = document.getElementById("preloader");
+ preloader.classList.add("hidden");
 });
 </script>
 
@@ -169,8 +165,6 @@ window.addEventListener("load", function() {
 
 
 
-
-
 <div class="auth-container">
   
   <!-- Login Form -->
@@ -180,11 +174,8 @@ window.addEventListener("load", function() {
     <label for="login-email">Email *</label>
     <input type="email" id="login-email" required>
 
-    <label for="confirm-password">Password *</label>
+    <label for="login-password">Password *</label>
     <input type="password" id="login-password" required>
-
-    <label for="login-password">Confirm Password *</label>
-    <input type="password" id="confirm-password" required>
 
     <button type="submit" class="submit-btn">Login</button>
 
@@ -209,6 +200,9 @@ window.addEventListener("load", function() {
     <label for="signup-password">Password *</label>
     <input type="password" id="signup-password" required>
 
+    <label for="signup-confirm-password">Confirm Password *</label>
+    <input type="password" id="signup-confirm-password" required>
+
     <button type="submit" class="submit-btn">Sign Up</button>
     <button type="button" class="toggle-btn" onclick="toggleForms('login')">
       Already have an account? Login
@@ -228,8 +222,6 @@ window.addEventListener("load", function() {
     </button>
   </form>
 </div>
-
-
 
 <script>
 function toggleForms(form) {
@@ -259,7 +251,6 @@ document.getElementById("signup-form").addEventListener("submit", function(e) {
   toggleForms("login");
 });
 
-
 // Handle Login
 document.getElementById("login-form").addEventListener("submit", function(e) {
   e.preventDefault();
@@ -270,7 +261,7 @@ document.getElementById("login-form").addEventListener("submit", function(e) {
   if (savedUser && savedUser.password === password) {
     localStorage.setItem("currentUser", email);
     alert("Login successful!");
-    window.location.href = "orders.html";
+    window.location.href = "orders.html"; // redirect after login
   } else {
     alert("Invalid email or password.");
   }

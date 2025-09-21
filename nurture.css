@@ -1738,6 +1738,11 @@ gap: -50px;
   /* width: 400px; */
 }
 
+.product-info-mobile {
+  display: none;
+}
+
+
 .product-info h2 {
   font-size: 1.2rem;
   color: #067f3f;
@@ -2009,6 +2014,16 @@ gap: -50px;
   list-style: circle;
   text-align: left;
 }
+
+.product-info h2 {
+  display: none;
+}
+
+.product-info-mobile {
+  display: block !important;
+}
+
+
 
 
  
@@ -2333,7 +2348,8 @@ transition: 0.3s ease-out;
   }
 
   .shop-now-content h2 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 800;
     max-width: 100%;
   }
 

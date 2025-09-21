@@ -1563,6 +1563,7 @@ gap: -50px;
   .cards-header p {
     font-size: 0.9rem;
     width: 90%;
+    justify-self: center;
     /* text-align: left; */
   }
 

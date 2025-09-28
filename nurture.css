@@ -1345,6 +1345,7 @@ gap: -50px;
 .how-text .p1 {
   font-size: 16px;
   margin-bottom: 25px;
+
  
 }
 
@@ -1416,6 +1417,139 @@ gap: -50px;
 }
 
 
+/* Testimonials */
+
+.reviews-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #e6f1eb;
+}
+
+.reviews-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.reviews-carousel {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.4s ease-in-out;
+}
+
+.review-card {
+  flex: 0 0 calc(33.333% - 1rem); 
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+.stars {
+  color: #FFD700;   /* gold */
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+
+.review-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.review-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.review-card span {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+}
+
+
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+
+.reviews-carousel {
+  position: relative; 
+  overflow: hidden;   
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem; 
+}
+
+.carousel-btn {
+  position: static; 
+  background: #716f6f;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.carousel-btn:hover {
+  background: #555;
+}
+
+
+.carousel-btn.prev {
+  left: 0px;  
+}
+
+.carousel-btn.next {
+  right: 0px;
+}
+
+.carousel-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+  .review-card {
+    flex: 0 0 calc(50% - 1rem); /* 2 per view */
+  }
+}
+
+@media (max-width: 600px) {
+  .review-card {
+    flex: 0 0 100%; /* 1 per view */
+  }
+}
 
 
 

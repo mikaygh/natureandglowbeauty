@@ -391,6 +391,117 @@ window.addEventListener("load", function() {
   </div>
 </section> -->
 
+
+
+
+<!-- Testimonials Section -->
+
+<!-- Testimonials Section -->
+<section class="reviews-section">
+  <h2>TESTIMONIALS</h2>
+  <p class="subtitle">What Our Happy Customers Say</p> 
+  
+  <!-- Carousel Wrapper -->
+  <div class="reviews-carousel">
+    
+    <!-- Review Track -->
+    <div class="reviews-track">
+      
+      <!-- Review Cards -->
+      <div class="review-card">
+        <h3>Zeitschild AR Serum  (Active Relief Serum)</h3>
+        <div class="stars">★★★★★</div>
+        <p>“This serum gives my skin instant relief whenever it feels stressed or sensitive. It’s lightweight and soothing.”</p>
+        <span>- Amelia K.</span>
+      </div>
+
+      <div class="review-card">
+        <h3>Zeitschild AC Clear (Acne Clear)</h3>
+        <div class="stars">★★★★</div>
+        <p>“After a month, my blemishes are reduced and my skin tone looks more even. Highly recommend!”</p>
+        <span>– Chloe P.</span>
+      </div>
+
+      <div class="review-card">
+        <h3>Zeitschild BR Cream (Barrier Repair Cream)</h3>
+        <div class="stars">★★★★★</div>
+        <p>“My skin barrier was so compromised, but this cream brought it back to life. My dryness and tightness are gone.”</p>
+        <span>– Hannah S.</span>
+      </div>
+
+      <div class="review-card">
+        <h3>Zeitschild AR Serum (Active Relief Serum)</h3>
+        <div class="stars">★★★★</div>
+        <p>“I use it after cleansing, and it calms redness and irritation right away. My skin feels balanced again.”</p>
+        <span>- Rachel M.</span>
+      </div>
+
+      <div class="review-card">
+        <h3>Zeitschild S.R. Lotion (Scalp Relief Lotion)</h3>
+        <div class="stars">★★★★★</div>
+        <p>“Finally, relief for my itchy, dry scalp! It absorbs quickly and doesn’t leave my hair oily.”</p>
+        <span>– James L.</span>
+      </div>
+
+      <div class="review-card">
+        <h3>Zeitschild AR Serum (Active Relief Serum)</h3>
+        <div class="stars">★★★★★</div>
+        <p>“A must-have for sensitive skin! It helps my skin recover quickly and keeps it feeling comfortable.”</p>
+        <span>- Linda O.</span>
+      </div>
+
+      <div class="review-card">
+        <h3>Zeitschild BR Cream (Barrier Repair Cream)</h3>
+        <div class="stars">★★★★</div>
+        <p>“So nourishing without being greasy. My skin feels stronger and stays hydrated all day.”</p>
+        <span>– Jennifer A.</span>
+      </div>
+
+      <div class="review-card">
+        <h3>Zeitschild BR Cream (Barrier Repair Cream)</h3>
+        <div class="stars">★★★★★</div>
+        <p>“This is my rescue cream whenever my skin feels overworked. It restores and protects beautifully.”</p>
+        <span>– Monique B.</span>
+      </div>
+
+      <div class="review-card">
+        <h3>Zeitschild S.R. Lotion (Scalp Relief Lotion)</h3>
+        <div class="stars">★★★★★</div>
+        <p>“Within a week of use, my scalp feels calm and healthy again. No more flakes or irritation.”</p>
+        <span>– Naomi W.</span>
+      </div>
+
+      <div class="review-card">
+        <h3>Zeitschild AC Clear (Acne Clear)</h3>
+        <div class="stars">★★★★★</div>
+        <p>“This treatment cleared my breakouts without drying out my skin. It feels gentle but really works.”</p>
+        <span>– Tanya R.</span>
+      </div>
+
+      <div class="review-card">
+        <h3>Zeitschild AR Serum (Active Relief Serum)</h3>
+        <div class="stars">★★★★★</div>
+        <p>“Finally found a product that calms my skin without clogging pores. Love the relief it gives.”</p>
+        <span>– Claire N.</span>
+      </div>
+
+    </div>
+
+    <!-- Controls centered below -->
+    <div class="carousel-controls">
+      <button class="carousel-btn prev">&#10094;</button>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
 <!-- Parallax Section -->
 <section class="parallax-index">
    <div class="parallax-overlay"></div>
@@ -424,6 +535,53 @@ window.addEventListener("load", function() {
   </div>
 </section> -->
 
+
+
+
+
+<script>
+const track = document.querySelector('.reviews-track');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+const nextBtn = document.querySelector('.carousel-btn.next');
+const cards = document.querySelectorAll('.review-card');
+
+let index = 0;
+let cardsPerView = window.innerWidth < 600 ? 1 : window.innerWidth < 992 ? 2 : 3;
+
+function updateCarousel() {
+  const cardWidth = cards[0].offsetWidth + 16; // width + gap
+  track.style.transform = `translateX(-${index * cardWidth}px)`;
+
+  // Disable/enable buttons
+  prevBtn.disabled = index === 0;
+  nextBtn.disabled = index >= cards.length - cardsPerView;
+}
+
+nextBtn.addEventListener('click', () => {
+  if (index < cards.length - cardsPerView) {
+    index++;
+    updateCarousel();
+  }
+});
+
+prevBtn.addEventListener('click', () => {
+  if (index > 0) {
+    index--;
+    updateCarousel();
+  }
+});
+
+window.addEventListener('resize', () => {
+  cardsPerView = window.innerWidth < 600 ? 1 : window.innerWidth < 992 ? 2 : 3;
+  if (index > cards.length - cardsPerView) {
+    index = cards.length - cardsPerView; // reset if too far
+  }
+  updateCarousel();
+});
+
+// Initialize state
+updateCarousel();
+</script>
 
 
 

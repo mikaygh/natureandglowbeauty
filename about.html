@@ -31,8 +31,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
-    <script src="mobile-nav.js"></script>
-    <script src="content-transition.js"> </script>
+    <script src="js/mobile-nav.js"></script>
+    <script src="js/content-transition.js"> </script>
 
     <!-- Google tag (gtag.js) -->
 
@@ -107,7 +107,7 @@ window.addEventListener("load", function() {
 
       <div class="account-cart">
         <ul class="a-c">
-          <li><a href="account.html"><img src="images/account.png" alt="Account"></a></li>
+          <!-- <li><a href="account.html"><img src="images/account.png" alt="Account"></a></li> -->
           <li>
           <a href="cart.html" class="cart-link">
             <img src="images/shopping-cart_5254037.png" alt="Cart">
@@ -141,7 +141,7 @@ window.addEventListener("load", function() {
 
     <!-- Account & Cart (right) -->
     <div class="account-cart-mobile">
-      <a href="account.html"><img src="images/account.png" alt="Account"></a>
+      <!-- <a href="account.html"><img src="images/account.png" alt="Account"></a> -->
       <a href="cart.html" class="cart-link">
         <img src="images/shopping-cart_5254037.png" alt="Cart">
         <span class="cart-count">0</span>
@@ -255,7 +255,7 @@ window.addEventListener("load", function() {
     </div>
 
     <div class="how-image">
-      <img src="images/black-woman-smile-hair-scarf-care-studio-isolated-brown-background-natural-cosmetics-thinking-african-model-with-head-wrap-after-salon-treatment-afro-wellness-hairstyle.png" alt="Business illustration">
+      <img src="images/black-woman-smile-hair-scarf-care-studio-isolated-brown-background-natural-cosmetics-thinking-african-model-with-head-wrap-after-salon-treatment-afro-wellness-hairstyle.webp" alt="Business illustration">
     </div>
   </div>
 </section>
@@ -270,13 +270,31 @@ window.addEventListener("load", function() {
     <div class="newsletter-sub">Subscribe for launch updates, expert tips, and exclusive offers.</div>
     <div class="newsletter-form">
       <!-- <label for="text">Subscribe</label> -->
-      <input type="text" placeholder="example@email.com">
-      <input type="submit">
+    <form action="newsletter-submit.php" method="POST"> Email 
+      <input type="text" placeholder="example@email.com" name="email" required
+             pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+             title="Enter a valid email address (e.g. example@domain.com)">
+      <input type="submit" value="Subscribe">
+    </form>
+
       <!-- <div class="input-placeholder">[ email input here ]</div>
       <div class="submit-placeholder" role="button" tabindex="0">Subscribe</div> -->
     </div>
   </div>
 </section>
+
+<!-- <section class="newsletter fade-in-section" id="newsletter" data-animate="fade-up">
+  <div class="container">
+    <div class="newsletter-head" role="heading" aria-level="3">Stay in the Glow Loop</div>
+    <div class="newsletter-sub">Subscribe for launch updates, expert tips, and exclusive offers.</div>
+    <form class="newsletter-form" action="newsletter-submit.php" method="POST">
+      <input type="email" placeholder="example@email.com" name="email" required
+             pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+             title="Enter a valid email address (e.g. example@domain.com)">
+      <input type="submit" value="Subscribe">
+    </form>
+  </div>
+</section> -->
 
 
 
@@ -365,6 +383,6 @@ window.addEventListener("load", function() {
 </footer>
 
 
-<script src="cart.js"></script>
+<script src="js/cart.js"></script>
 </body>
 </html>
